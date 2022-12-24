@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/gambarBarang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:src="@color/black" />
+
+    <TextView
+        android:id="@+id/judulBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/gambarBarang"
+        android:fontFamily="@font/poppins_reg"
+        android:gravity="center"
+        android:text="JOEDOEL"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulBarang"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/gambarBarang"
+        android:background="@drawable/button"
+        android:text="CHECKOUT"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
